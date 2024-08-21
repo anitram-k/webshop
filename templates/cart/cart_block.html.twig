@@ -1,0 +1,38 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Név</th>
+            <th>Márka</th>
+            <th>Ár</th>
+            <th>Darab</th>
+            <th colspan="2">Akciók</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in cart %}
+            <tr>
+                <td>{{ item.product.id }}</td>
+                <td>{{ item.product.name }}</td>
+                <td>{{ item.product.brand }}</td> 
+                {% if item.product.discountedPrices %}
+                {% set lastPrice = item.product.discountedPrices|last %}
+                <td>{{ lastPrice.price }}</td>
+                {% else %}
+                <td>{{ item.product.price }}</td>
+                {% endif %}
+                <td class="quantity">{{ item.quantity }}</td>
+                <td>
+                    <button class="btn btn-info ajaxButton" data-action="add" data-url="{{ path("add_cart", {id: item.product.id}) }}">
+                        <i class="bi bi-plus-circle"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-secondary ajaxButton" data-action="remove" data-url="{{ path("add_cart", {id: item.product.id}) }}">
+                        <i class="bi bi-dash-circle"></i>
+                    </button>
+                    </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

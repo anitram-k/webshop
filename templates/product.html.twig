@@ -1,0 +1,12 @@
+<div class="product">
+    <div class="id">{{ product.id }}</div>
+    <div>{{ product.name }}</div>
+    <div>{{ product.brand }}</div>
+    <div>{{ product.price }}</div>
+    {% if product.discountedPrices %}
+        {% for item in product.discountedPrices %}
+            <div>{{ item.price }}</div>
+        {% endfor %}
+    {% endif %}
+    <button class="btn btn-success ajaxButton" data-action="add" data-url="{{ path("add_cart", {id: product.id}) }}">Kosárba</button>
+</div>

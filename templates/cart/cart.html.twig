@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div id="cart-wrapper">
+    <h1>Kosár tartalma</h1>
+
+    {% if cart %}
+    <div id="cartContent">
+        <div id="cartBlock">
+        {% include 'cart/cart_block.html.twig' with {'cart': cart} %}
+        </div>
+    
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" colspan="2"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Kosár eredeti összértéke</th>
+                    <td class="original">{{ sum.originalSum }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Kedvezmények összértéke</th>
+                    <td class="discount">{{ sum.discountSum }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Kedvezményes ár összértéke</th>
+                    <td class="discounted">{{ sum.discountedSum }}</td>
+                </tr>
+        </table>
+    
+        {% else %}
+        <div id="cartBlock">
+        </div>
+    
+        {% endif %}
+
+        <button class="deleteButton btn btn-danger" data-url="{{ path("delete_cart") }}">Kosár törlése</button>
+        <button class="saveButton btn btn-success" data-url="{{ path("save_cart") }}">Kosár Mentése</button>
+        <button class="loadButton btn btn-success" data-url="{{ path("update_cart") }}">Kosár Betöltése</button>
+    </div>
+    <div id="ajaxMessage" style="display: none;" class="alert alert-success"></div>
+</div>
+
+
+
+{% endblock %}

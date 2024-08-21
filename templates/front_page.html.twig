@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Üdvözlünk a Webshopban!</h1>
+    <div class="content">
+
+        {% for product in products %}
+            {% include 'product.html.twig' with {'product': product} %}
+        {% endfor %}
+        
+    </div>
+    {% block cart %}
+    <h1>Kosár</h1>
+        <div id="cartBlock">
+            {% include 'cart/cart_block.html.twig' %}
+        </div>
+        
+    {% endblock %}
+{% endblock %}
+

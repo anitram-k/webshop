@@ -4,89 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4baabe7940fea5b185428d8bd5a5008f",
+    "content-hash": "e841ba92fbbe55e0ac00758d4bea7656",
     "packages": [
-        {
-            "name": "composer/semver",
-            "version": "3.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/semver.git",
-                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c51258e759afdb17f1fd1fe83bc12baaef6309d6",
-                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.2 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^1.4",
-                "symfony/phpunit-bridge": "^4.2 || ^5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\Semver\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nils Adermann",
-                    "email": "naderman@naderman.de",
-                    "homepage": "http://www.naderman.de"
-                },
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                },
-                {
-                    "name": "Rob Bast",
-                    "email": "rob.bast@gmail.com",
-                    "homepage": "http://robbast.nl"
-                }
-            ],
-            "description": "Semver library that offers utilities, version constraint parsing and validation.",
-            "keywords": [
-                "semantic",
-                "semver",
-                "validation",
-                "versioning"
-            ],
-            "support": {
-                "irc": "ircs://irc.libera.chat:6697/composer",
-                "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.4.2"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/composer",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-07-12T11:35:52+00:00"
-        },
         {
             "name": "doctrine/cache",
             "version": "2.2.0",
@@ -268,16 +187,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.8.7",
+            "version": "3.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "2093d670ca17f634f3c095ec10a20687eccebd99"
+                "reference": "d8f68ea6cc00912e5313237130b8c8decf4d28c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2093d670ca17f634f3c095ec10a20687eccebd99",
-                "reference": "2093d670ca17f634f3c095ec10a20687eccebd99",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d8f68ea6cc00912e5313237130b8c8decf4d28c6",
+                "reference": "d8f68ea6cc00912e5313237130b8c8decf4d28c6",
                 "shasum": ""
             },
             "require": {
@@ -361,7 +280,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.8.7"
+                "source": "https://github.com/doctrine/dbal/tree/3.9.0"
             },
             "funding": [
                 {
@@ -377,7 +296,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-07T11:57:25+00:00"
+            "time": "2024-08-15T07:34:42+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2006,6 +1925,32 @@
             "time": "2021-07-14T16:46:02+00:00"
         },
         {
+            "name": "symfony/apache-pack",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/apache-pack.git",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/apache-pack/zipball/3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "shasum": ""
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for Apache support in Symfony",
+            "support": {
+                "issues": "https://github.com/symfony/apache-pack/issues",
+                "source": "https://github.com/symfony/apache-pack/tree/master"
+            },
+            "time": "2017-12-12T01:46:35+00:00"
+        },
+        {
             "name": "symfony/asset",
             "version": "v7.1.1",
             "source": {
@@ -2073,85 +2018,6 @@
                 }
             ],
             "time": "2024-05-31T14:57:53+00:00"
-        },
-        {
-            "name": "symfony/asset-mapper",
-            "version": "v7.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/asset-mapper.git",
-                "reference": "b496ba0c1ca69abbbc2413b853decad2eed9a74b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/asset-mapper/zipball/b496ba0c1ca69abbbc2413b853decad2eed9a74b",
-                "reference": "b496ba0c1ca69abbbc2413b853decad2eed9a74b",
-                "shasum": ""
-            },
-            "require": {
-                "composer/semver": "^3.0",
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.1|^3",
-                "symfony/filesystem": "^7.1",
-                "symfony/http-client": "^6.4|^7.0"
-            },
-            "conflict": {
-                "symfony/framework-bundle": "<6.4"
-            },
-            "require-dev": {
-                "symfony/asset": "^6.4|^7.0",
-                "symfony/browser-kit": "^6.4|^7.0",
-                "symfony/console": "^6.4|^7.0",
-                "symfony/event-dispatcher-contracts": "^3.0",
-                "symfony/finder": "^6.4|^7.0",
-                "symfony/framework-bundle": "^6.4|^7.0",
-                "symfony/http-foundation": "^6.4|^7.0",
-                "symfony/http-kernel": "^6.4|^7.0",
-                "symfony/web-link": "^6.4|^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\AssetMapper\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Maps directories of assets & makes them available in a public directory with versioned filenames.",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/asset-mapper/tree/v7.1.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-07-09T19:36:07+00:00"
         },
         {
             "name": "symfony/cache",
@@ -6836,103 +6702,6 @@
             "time": "2024-05-31T14:59:31+00:00"
         },
         {
-            "name": "symfony/ux-turbo",
-            "version": "v2.19.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/ux-turbo.git",
-                "reference": "abfee7181ce8b71f9a2447cdf9c562ed719a0e3e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ux-turbo/zipball/abfee7181ce8b71f9a2447cdf9c562ed719a0e3e",
-                "reference": "abfee7181ce8b71f9a2447cdf9c562ed719a0e3e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1",
-                "symfony/stimulus-bundle": "^2.9.1"
-            },
-            "conflict": {
-                "symfony/flex": "<1.13"
-            },
-            "require-dev": {
-                "dbrekelmans/bdi": "dev-main",
-                "doctrine/doctrine-bundle": "^2.4.3",
-                "doctrine/orm": "^2.8 | 3.0",
-                "phpstan/phpstan": "^1.10",
-                "symfony/debug-bundle": "^5.4|^6.0|^7.0",
-                "symfony/expression-language": "^5.4|^6.0|^7.0",
-                "symfony/form": "^5.4|^6.0|^7.0",
-                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
-                "symfony/mercure-bundle": "^0.3.7",
-                "symfony/messenger": "^5.4|^6.0|^7.0",
-                "symfony/panther": "^1.0|^2.0",
-                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0",
-                "symfony/process": "^5.4|6.3.*|^7.0",
-                "symfony/property-access": "^5.4|^6.0|^7.0",
-                "symfony/security-core": "^5.4|^6.0|^7.0",
-                "symfony/stopwatch": "^5.4|^6.0|^7.0",
-                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
-                "symfony/web-profiler-bundle": "^5.4|^6.0|^7.0",
-                "symfony/webpack-encore-bundle": "^2.1.1"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "thanks": {
-                    "name": "symfony/ux",
-                    "url": "https://github.com/symfony/ux"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\UX\\Turbo\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kévin Dunglas",
-                    "email": "kevin@dunglas.fr"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Hotwire Turbo integration for Symfony",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "hotwire",
-                "javascript",
-                "mercure",
-                "symfony-ux",
-                "turbo",
-                "turbo-stream"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/ux-turbo/tree/v2.19.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-07-30T16:00:35+00:00"
-        },
-        {
             "name": "symfony/validator",
             "version": "v7.1.3",
             "source": {
@@ -7270,6 +7039,77 @@
                 }
             ],
             "time": "2024-05-31T14:57:53+00:00"
+        },
+        {
+            "name": "symfony/webpack-encore-bundle",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/webpack-encore-bundle.git",
+                "reference": "75cb918df3f65e28cf0d4bc03042bc45ccb19dd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/75cb918df3f65e28cf0d4bc03042bc45ccb19dd0",
+                "reference": "75cb918df3f65e28cf0d4bc03042bc45ccb19dd0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1.0",
+                "symfony/asset": "^5.4 || ^6.2 || ^7.0",
+                "symfony/config": "^5.4 || ^6.2 || ^7.0",
+                "symfony/dependency-injection": "^5.4 || ^6.2 || ^7.0",
+                "symfony/http-kernel": "^5.4 || ^6.2 || ^7.0",
+                "symfony/service-contracts": "^1.1.9 || ^2.1.3 || ^3.0"
+            },
+            "require-dev": {
+                "symfony/framework-bundle": "^5.4 || ^6.2 || ^7.0",
+                "symfony/phpunit-bridge": "^5.4 || ^6.2 || ^7.0",
+                "symfony/twig-bundle": "^5.4 || ^6.2 || ^7.0",
+                "symfony/web-link": "^5.4 || ^6.2 || ^7.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/webpack-encore",
+                    "url": "https://github.com/symfony/webpack-encore"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\WebpackEncoreBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Integration with your Symfony app & Webpack Encore!",
+            "support": {
+                "issues": "https://github.com/symfony/webpack-encore-bundle/issues",
+                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v2.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-10-22T18:53:08+00:00"
         },
         {
             "name": "symfony/yaml",
